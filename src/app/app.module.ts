@@ -34,6 +34,9 @@ import { PowerBoostCalculatorComponent } from './pipes/power-boost-calculator/po
 import { FlyingHeroesComponent } from './pipes/flying-heroes/flying-heroes.component';
 import { FlyingHeroesPipe } from './pipes/flying-heroes.pipe';
 import { HeroAsyncMessageComponent } from './pipes/hero-async-message/hero-async-message.component';
+import { LoopBackComponent } from './forms/user-input/loop-back/loop-back.component';
+import { LittleTourComponent } from './forms/user-input/little-tour/little-tour.component';
+import { HeroFormComponent } from './forms/template-driven/hero-form.component';
 
 
 @NgModule({
@@ -67,7 +70,10 @@ import { HeroAsyncMessageComponent } from './pipes/hero-async-message/hero-async
     PowerBoostCalculatorComponent,
     FlyingHeroesComponent,
     FlyingHeroesPipe,
-    HeroAsyncMessageComponent
+    HeroAsyncMessageComponent,
+    LoopBackComponent,
+    LittleTourComponent,
+    HeroFormComponent
   ],
   imports: [
     BrowserModule,
