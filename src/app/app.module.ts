@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
@@ -37,6 +37,8 @@ import { HeroAsyncMessageComponent } from './pipes/hero-async-message/hero-async
 import { LoopBackComponent } from './forms/user-input/loop-back/loop-back.component';
 import { LittleTourComponent } from './forms/user-input/little-tour/little-tour.component';
 import { HeroFormComponent } from './forms/template-driven/hero-form.component';
+import { HeroDetailComponent } from './forms/reactive-form/hero-detail/hero-detail.component';
+import { HeroListComponent } from './forms/reactive-form/hero-list/hero-list.component';
 
 
 @NgModule({
@@ -73,11 +75,14 @@ import { HeroFormComponent } from './forms/template-driven/hero-form.component';
     HeroAsyncMessageComponent,
     LoopBackComponent,
     LittleTourComponent,
-    HeroFormComponent
+    HeroFormComponent,
+    HeroDetailComponent,
+    HeroListComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     AdService
